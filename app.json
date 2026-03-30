@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "صباح الورد",
+    "slug": "rose-morning",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#fff0f5"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.rosemorning.app",
+      "buildNumber": "1",
+      "infoPlist": {
+        "NSPhotoLibraryAddUsageDescription": "نحتاج للوصول لحفظ صور الورود كخلفيات",
+        "NSPhotoLibraryUsageDescription": "نحتاج للوصول لمكتبة الصور"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#fff0f5"
+      },
+      "package": "com.rosemorning.app",
+      "versionCode": 1,
+      "permissions": [
+        "WRITE_EXTERNAL_STORAGE",
+        "READ_EXTERNAL_STORAGE",
+        "SET_WALLPAPER"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#c2185b"
+        }
+      ],
+      "expo-media-library",
+      "expo-sharing"
+    ]
+  }
+}
