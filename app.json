@@ -2,6 +2,7 @@
   "expo": {
     "name": "صباح الورد",
     "slug": "rose-morning",
+    "owner": "omdapay2026",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -11,7 +12,9 @@
       "resizeMode": "contain",
       "backgroundColor": "#fff0f5"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": false,
       "bundleIdentifier": "com.rosemorning.app",
@@ -31,7 +34,9 @@
       "permissions": [
         "WRITE_EXTERNAL_STORAGE",
         "READ_EXTERNAL_STORAGE",
-        "SET_WALLPAPER"
+        "SET_WALLPAPER",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE"
       ]
     },
     "web": {
@@ -45,8 +50,12 @@
           "color": "#c2185b"
         }
       ],
-      "expo-media-library",
-      "expo-sharing"
-    ]
+      "expo-media-library"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "f4da0cdc-9b89-4755-a126-8418281e1e50"
+      }
+    }
   }
 }
