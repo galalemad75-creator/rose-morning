@@ -34,15 +34,23 @@
       "permissions": [
         "WRITE_EXTERNAL_STORAGE",
         "READ_EXTERNAL_STORAGE",
-        "SET_WALLPAPER",
-        "android.permission.READ_EXTERNAL_STORAGE",
-        "android.permission.WRITE_EXTERNAL_STORAGE"
+        "SET_WALLPAPER"
       ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "plugins": [],
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/icon.png",
+          "color": "#c2185b",
+          "mode": "production"
+        }
+      ],
+      "expo-media-library"
+    ],
     "extra": {
       "eas": {
         "projectId": "f4da0cdc-9b89-4755-a126-8418281e1e50"
